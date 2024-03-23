@@ -70,7 +70,7 @@ func setFlags() Flags {
 }
 
 func initSoundBuffer() (beep.StreamSeeker, *beep.Buffer) {
-	f, err := os.Open("../notification.wav")
+	f, err := os.Open("../emergency-alarm-with-reverb.wav")
 	if err != nil {
 		log.Fatalf("failed to load audio file: %v", err)
 	}
